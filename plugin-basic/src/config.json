@@ -1,0 +1,35 @@
+{
+  "name": "Example Module - Basic Plugin",
+  "namespace": "ExampleModules\\PluginBasic",
+  "description": "My description",
+  "authors": [
+    {
+      "name": "Chris Kadolph",
+      "email": "kadolph.christopher@marshfieldresearch.org",
+      "institution": "Marshfield Clinic Research Institute"
+    },
+  ],
+  "links": {
+    "project": [
+      {
+        "name": "Basic Plugin",
+        "icon": "blog_pencil",
+        "url": "search.php"
+      }
+    ]
+  },
+  "compatibility": {
+    "php-version-min": "5.4.0",
+    "php-version-max": "",
+    "redcap-version-min": "8.0.0",
+    "redcap-version-max": ""
+  },
+  "project-settings": [
+    {
+      "key": "enable_debugging",
+      "name": "Allows the module to output debugging information",
+      "required": false,
+      "type": "checkbox"
+    }
+  ]
+}

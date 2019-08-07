@@ -1,0 +1,29 @@
+{
+  "name": "Example Module - Advanced Plugin",
+  "namespace": "ExampleModules\\PluginAdvanced",
+  "description": "My description",
+  "authors": [
+    {
+      "name": "Chris Kadolph",
+      "email": "kadolph.christopher@marshfieldresearch.org",
+      "institution": "Marshfield Clinic Research Institute"
+    }
+  ],
+  "compatibility": {
+    "php-version-min": "5.4.0",
+    "php-version-max": "",
+    "redcap-version-min": "8.0.0",
+    "redcap-version-max": ""
+  },
+  "permissions": [
+    "redcap_every_page_top"
+  ],
+  "project-settings": [
+    {
+      "key": "enable_debugging",
+      "name": "Allows the module to output debugging information",
+      "required": false,
+      "type": "checkbox"
+    }
+  ]
+}
