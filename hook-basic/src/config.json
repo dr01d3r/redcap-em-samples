@@ -1,6 +1,6 @@
 {
-  "name": "Example Module - Advanced Plugin",
-  "namespace": "ExampleModules\\PluginAdvanced",
+  "name": "Example Module - Basic Hook",
+  "namespace": "ExampleModules\\HookBasic",
   "description": "My description",
   "authors": [
     {
@@ -16,7 +16,11 @@
     "redcap-version-max": ""
   },
   "permissions": [
-    "redcap_every_page_top"
+    "redcap_every_page_top",
+    "redcap_survey_page_top",
+    "redcap_data_entry_form_top",
+    "redcap_survey_page",
+    "redcap_data_entry_form"
   ],
   "project-settings": [
     {
