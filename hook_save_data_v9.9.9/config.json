@@ -1,6 +1,6 @@
 {
-  "name": "Example Module - Basic Hook",
-  "namespace": "ExampleModules\\HookBasic",
+  "name": "Example Module - Save Data Hook",
+  "namespace": "ExampleModules\\HookSaveData",
   "description": "My description",
   "authors": [
     {
@@ -16,11 +16,7 @@
     "redcap-version-max": ""
   },
   "permissions": [
-    "redcap_every_page_top",
-    "redcap_survey_page_top",
-    "redcap_data_entry_form_top",
-    "redcap_survey_page",
-    "redcap_data_entry_form"
+    "redcap_save_record"
   ],
   "project-settings": [
     {

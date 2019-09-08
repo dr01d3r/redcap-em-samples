@@ -8,9 +8,11 @@ class HookBasic extends AbstractExternalModule {
 
     public function redcap_every_page_top($project_id)
     {
-        $this->displayAlert(__FUNCTION__);
-        if ($this->getProjectSetting("enable_debugging", $project_id) === true) {
-            $this->displayDebug(get_defined_vars());
+        if ($this->getProjectSetting("enable_every_page_top", $project_id) === true) {
+            $this->displayAlert(__FUNCTION__);
+            if ($this->getProjectSetting("enable_debugging", $project_id) === true) {
+                $this->displayDebug(get_defined_vars());
+            }
         }
     }
 
@@ -51,7 +53,6 @@ class HookBasic extends AbstractExternalModule {
     }
 
     function displayDebug($debug) {
-
         if (is_array($debug) || is_object($debug)) {
             echo "<pre>" . print_r($debug, true) . "</pre>";
         } else {

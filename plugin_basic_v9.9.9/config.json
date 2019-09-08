@@ -1,0 +1,27 @@
+{
+  "name": "Example Module - Basic Plugin",
+  "namespace": "ExampleModules\\BasicPlugin",
+  "description": "Demonstrates some basic methods of pulling data from REDCap and displaying it on a plugin page",
+  "authors": [
+    {
+      "name": "Chris Kadolph",
+      "email": "kadolph.christopher@marshfieldresearch.org",
+      "institution": "Marshfield Clinic Research Institute"
+    }
+  ],
+  "links": {
+    "project": [
+      {
+        "name": "Basic Plugin",
+        "icon": "gear",
+        "url": "index.php"
+      }
+    ]
+  },
+  "compatibility": {
+    "php-version-min": "5.2.0",
+    "php-version-max": "",
+    "redcap-version-min": "",
+    "redcap-version-max": ""
+  }
+}
