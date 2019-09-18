@@ -1,0 +1,28 @@
+{
+  "name": "Example Module - Basic Framework Plugin",
+  "namespace": "ExampleModules\\BasicFrameworkPlugin",
+  "description": "Usage of the framework versions of external modules",
+  "authors": [
+    {
+      "name": "Chris Kadolph",
+      "email": "kadolph.christopher@marshfieldresearch.org",
+      "institution": "Marshfield Clinic Research Institute"
+    }
+  ],
+  "framework-version": 3,
+  "links": {
+    "project": [
+      {
+        "name": "Basic Framework Plugin",
+        "icon": "fas fa-cogs",
+        "url": "index.php"
+      }
+    ]
+  },
+  "compatibility": {
+    "php-version-min": "5.2.0",
+    "php-version-max": "",
+    "redcap-version-min": "9.0.0",
+    "redcap-version-max": ""
+  }
+}
