@@ -21,6 +21,11 @@ include_once(__DIR__."/config.php");
 
 $_GET['pid'] = PROJECT_ID;
 
+// Verify plugin is configured and display error message if not
+if(!is_numeric(constant("PROJECT_ID"))) {
+	throw new Exception("PROJECT_ID not defined in config.php");
+}
+
 // Navigate to root REDCap folder
 $rootDir = dirname(dirname(__DIR__));
 

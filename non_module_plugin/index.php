@@ -35,6 +35,12 @@ foreach($data as $recordId => $recordData) {
 	}
 }
 
+// Get REDCap Project metadata for the given fields
+$metadata = REDCap::getDataDictionary(PROJECT_ID,"array");
+
+$genderEnum = parseEnum(str_replace("|","\\n",$metadata[GENDER_FIELD]["select_choices_or_calculations"]));
+$countryEnum = parseEnum(str_replace("|","\\n",$metadata[COUNTRY_FIELD]["select_choices_or_calculations"]));
+
 // Convert the raw counts to a percentage
 $genderPercent = [];
 $countryPercent = [];
@@ -48,10 +54,14 @@ foreach($countryCounts as $countryValue => $count) {
 }
 
 // Start HTML Output
-$cssUrl = APP_PATH_WEBROOT_PARENT.APP_PATH_CSS."style.css";
+$cssUrl = APP_PATH_WEBROOT_FULL.APP_PATH_CSS."style.css";
 
 // Include REDCap Stylesheet
 echo "<link rel='stylesheet' href='$cssUrl' />";
+
+echo "<div class='container'>
+	<div class='row'>
+		<div class='col-xs-6'>";
 
 // Display the data in a table
 echo "<table class='table border'>
@@ -63,7 +73,7 @@ echo "<table class='table border'>
 foreach($genderPercent as $genderValue => $percent) {
 	echo "
 	<tr>
-		<td>".$genderValue."</td>
+		<td>".$genderEnum[$genderValue]."</td>
 		<td>".$percent."%</td>
 	</tr>";
 }
@@ -79,7 +89,11 @@ echo "<table class='table border'>
 foreach($countryPercent as $countryValue => $percent) {
 	echo "
 	<tr>
-		<td>".$countryValue."</td>
+		<td>".$countryEnum[$countryValue]."</td>
 		<td>".$percent."%</td>
 	</tr>";
 }
+
+echo "		</div>
+	</div>
+</div>";
