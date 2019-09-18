@@ -1,0 +1,62 @@
+{
+	"name": "cron_basic",
+
+	"namespace": "cron_basic",
+
+	"description": "Basic example of cron-based module functionality",
+
+	"documentation": "README.md",
+
+	"authors": [
+		{
+			"name": "Kyle McGuffin",
+			"email": "kyle.mcguffin@vumc.org",
+			"institution": "Vanderbilt University Medical Center"
+		}
+	],
+
+	"permissions": [
+
+	],
+	
+	"enable-every-page-hooks-on-system-pages": false,	
+
+	"links": {
+		"project": [
+
+		],
+		"control-center": [
+
+		]
+	},
+
+	"no-auth-pages": [
+
+	],
+
+	"project-settings": [
+
+	],
+
+	"system-settings": [
+
+	],
+
+	"crons": [
+		{
+			"cron_name": "log_cron",
+			"cron_description": "Runs every 2 minutes to log an alert",
+			"method": "log_cron",
+			"cron_frequency": "120",
+			"cron_max_run_time": "20"
+		}
+
+	],
+
+	"compatibility": {
+		"php-version-min": "",
+		"php-version-max": "",
+		"redcap-version-min": "",
+		"redcap-version-max": ""
+	}
+}
