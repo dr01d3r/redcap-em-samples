@@ -36,3 +36,4 @@
     * manually coding json
     * starting with the templater
 * [Repository of External Modules](https://redcap.vanderbilt.edu/consortium/modules/index.php): https://redcap.vanderbilt.edu/consortium/modules/index.php
+* Notes from meeting: https://docs.google.com/document/d/1UbeN-_le8JLsy8yYVtjaiu2gTMYrcLxAzsIw5Sb-IPM/edit
