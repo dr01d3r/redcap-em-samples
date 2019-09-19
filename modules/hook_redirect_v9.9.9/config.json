@@ -1,0 +1,72 @@
+{
+	"name": "HookRedirect",
+
+	"namespace": "ExampleModules\\HookRedirect",
+
+	"description": "Temporary Description",
+
+	"documentation": "README.md",
+
+	"authors": [
+		{
+			"name": "Kyle McGuffin",
+			"email": "kyle.mcguffin@vumc.org",
+			"institution": "Vanderbilt University Medical Center"
+		}
+	],
+
+	"permissions": [
+		"redcap_add_edit_records_page",
+		"redcap_control_center",
+		"redcap_data_entry_form",
+		"redcap_data_entry_form_top",
+		"redcap_project_home_page",
+		"redcap_save_record",
+		"redcap_survey_complete",
+		"redcap_survey_page",
+		"redcap_survey_page_top",
+		"redcap_user_rights",
+		"redcap_module_system_enable",
+		"redcap_module_system_disable",
+		"redcap_module_system_change_version",
+		"redcap_module_project_enable",
+		"redcap_module_project_disable",
+		"redcap_module_save_configuration"
+	],
+	
+	"enable-every-page-hooks-on-system-pages": false,	
+
+	"links": {
+		"project": [
+
+		],
+		"control-center": [
+			{
+				"name": "Hello World",
+				"url": "pages/index.php"
+			}
+		]
+	},
+
+	"no-auth-pages": [
+
+	],
+
+	"project-settings": [
+
+	],
+
+	"system-settings": [
+
+	],
+
+	"crons": [
+	],
+
+	"compatibility": {
+		"php-version-min": "",
+		"php-version-max": "",
+		"redcap-version-min": "",
+		"redcap-version-max": ""
+	}
+}
