@@ -1,0 +1,57 @@
+{
+	"name": "ProjectRequestor",
+
+	"namespace": "ExampleModules\\ProjectRequestor",
+
+	"description": "Temporary Description",
+
+	"documentation": "README.md",
+
+	"authors": [
+		{
+			"name": "Kyle McGuffin",
+			"email": "kyle.mcguffin@vumc.org",
+			"institution": "Vanderbilt University Medical Center"
+		}
+	],
+
+	"permissions": [
+		"redcap_every_page_before_render"
+	],
+	
+	"enable-every-page-hooks-on-system-pages": true,
+
+	"links": {
+		"project": [
+
+		],
+		"control-center": [
+		]
+	},
+
+	"no-auth-pages": [
+
+	],
+
+	"project-settings": [
+
+	],
+
+	"system-settings": [
+		{
+			"name": "New Project Link",
+			"key": "project-link",
+			"type": "text"
+		}
+	],
+
+	"crons": [
+	],
+
+	"compatibility": {
+		"php-version-min": "",
+		"php-version-max": "",
+		"redcap-version-min": "",
+		"redcap-version-max": ""
+	}
+}
