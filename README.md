@@ -25,3 +25,5 @@
     - Bringing in external libraries through Composer
 - Autoloader Plugin ([link](modules/plugin_psr4_v9.9.9))
   - Focuses on a singular feature of Composer, psr-4, that makes class management easier in your module
+
+### Sept 2019 Curriculum
