@@ -27,3 +27,12 @@
   - Focuses on a singular feature of Composer, psr-4, that makes class management easier in your module
 
 ### Sept 2019 Curriculum
+
+* Developer tools: Tools we use as a REDCap EM developers
+* Common Gotchas
+* EMs vs plugins vs hooks
+* External Module Framework
+* EMs from scratch
+    * manually coding json
+    * starting with the templater
+* [Repository of External Modules](https://redcap.vanderbilt.edu/consortium/modules/index.php): https://redcap.vanderbilt.edu/consortium/modules/index.php
